@@ -22,61 +22,55 @@
 
 Для компании, помимо привлечения большого количества клиентов с помощью этой рискованной стратегии и гарантии возмещения в случае невыявления мошенничества, успех зависит только от точности и достоверности моделей, разработанных ее специалистами по данным. Чем точнее модель "Blocker Fraud", тем выше доход компании. Однако при низкой точности модели компания может понести значительные убытки.
 
-## 2.0 Business Assumptions
+## 2.0 Бизнес-предположения
 
-Fraud prevention is the implementation of a strategy to detect fraudulent transactions or banking actions and prevent these actions from causing financial damage and the reputation of the client and the financial institution.
+Предотвращение мошенничества - это реализация стратегии обнаружения мошеннических транзакций или банковских действий и предотвращение этих действий, чтобы избежать финансового ущерба и ущерба репутации клиента и финансового учреждения.
 
-There are always financial frauds and They can happen through virtual and physical ways. So the investment in security has been increasing.
+Финансовые мошенничества всегда существуют, и они могут происходить как виртуальными, так и физическими способами. Поэтому инвестиции в безопасность постоянно увеличиваются.
 
-The losses caused by fraud can reach R\$ 1 billion - which corresponds to half the amount that institutions invest in technology systems aimed at information security every year, according to [Febraban's 2020 Banking Technology Survey](https://blog.simply.com.br/tecnologia-bancaria-2020/).
+Убытки от мошенничества могут достигать 1 миллиарда реалов, что соответствует половине суммы, которую учреждения инвестируют в технологические системы, направленные на информационную безопасность каждый год, согласно  [Febraban's 2020 Banking Technology Survey](https://blog.simply.com.br/tecnologia-bancaria-2020/).
 
-## 3.0 Solution Strategy
+## 3.0 Стратегия решения
 
-My solution to solve this problem will be the development of a data science project. This project will have a machine learning model which can predict whether a transaction is fraudulent or not.
+Моим решением этой проблемы будет разработка проекта в области науки о данных. Этот проект будет включать в себя модель машинного обучения, которая может предсказывать, является ли транзакция мошеннической или нет.
 
-**Step 01. Data Description:** In this first section the data will be collected and studied. The missing values will be threated or removed. Finally, a initial data description will carried out to know the data. Therefore some calculations of descriptive statistics will be made, such as kurtosis, skewness, media, fashion, median and standard desviation.
+**Шаг 01.** Описание данных: На этом первом этапе данные будут собраны и изучены. Отсутствующие значения будут обработаны или удалены. Затем будет проведено первоначальное описание данных, чтобы понять их. Будут выполнены некоторые расчеты описательной статистики, такие как эксцесс, асимметрия, среднее, мода, медиана и стандартное отклонение.
 
-**Step 02. Feature Engineering:** In this section, a mind map will be created to assist the creation of the hypothesis and the creation of new features. These assumptions will help in exploratory data analysis and may improve the model scores.
+**Шаг 02.** Инженерия признаков: На этом этапе будет создана карта ума для помощи в формировании гипотез и создании новых признаков. Эти предположения помогут в разведывательном анализе данных и могут улучшить показатели модели.
 
-**Step 03. Data Filtering:** Data filtering is used to remove columns or rows that are not part of the business. For example, columns with customer ID, hash code or rows with age that does not consist of human age.
+**Шаг 03.** Фильтрация данных: Фильтрация данных используется для удаления столбцов или строк, которые не относятся к бизнесу. Например, столбцы с идентификатором клиента, хэш-кодом или строки с возрастом, который не соответствует человеческому возрасту.
 
-**Step 04. Exploratory Data Analysis:** The exploratory data analysis section consists of univariate analysis, bivariate analysis and multivariate analysis to assist in understanding of the database. The hypothesis created in step 02 will be tested in the bivariate analysis.
+**Шаг 04.** Разведывательный анализ данных: Этот раздел состоит из унивариативного, бивариативного и мультивариативного анализа для помощи в понимании базы данных. Гипотезы, созданные на шаге 02, будут проверены в бивариативном анализе.
 
-**Step 05. Data Preparation:** In this fifth section, the data will be prepared for machine learning modeling. Therefore, they will be transformed to improve the learning of the machine learning model, thus they can be encoded, oversampled, subsampled or rescaled.
+**Шаг 05.** Подготовка данных: На этом пятом этапе данные будут подготовлены для моделирования машинного обучения. Следовательно, они будут преобразованы для улучшения обучения модели машинного обучения, таким образом, они могут быть закодированы, увеличены, уменьшены или масштабированы.
 
-**Step 06. Feature Selection:** After the data preparation in this section algorithms, like Boruta, will select the best columns to be used for the training of the machine learning model. This reduces the dimensionality of the database and decreases the chances of overfiting.
+**Шаг 06.** Выбор признаков: После подготовки данных на этом этапе алгоритмы, такие как Boruta, выберут лучшие столбцы для обучения модели машинного обучения. Это сокращает размерность базы данных и уменьшает вероятность переобучения.
 
-**Step 07. Machine Learning Modeling:** Step 07 aims to train the machine learning algorithms and how they can predict the data. For validation the model is trained, validated and applied to cross validation to know the learning capacity of the model.
+**Шаг 07.** Моделирование машинного обучения: Шаг 07 направлен на обучение алгоритмов машинного обучения и их способность предсказывать данные. Для валидации модель обучается, проверяется и применяется кросс-валидация, чтобы узнать способность модели к обучению.
 
-**Step 08. Hyparameter Fine Tuning:** Firstly selected the best model to be applied in the project, it's important to make a fine tuning of the parameters to improve its scores. The same model performance methods apllied in the step 07 are used.
+**Шаг 08.** Настройка гиперпараметров: После выбора лучшей модели для применения в проекте важно тонко настроить параметры для улучшения ее показателей. Методы оценки производительности модели, применяемые на шаге 07, используются также здесь.
 
-**Step 09. Conclusions:** This is a conclusion stage which the generation capacity model is tested using unseen data. In addition, some business questions are answered to show the applicability of the model in the business context.
+**Шаг 09.** Выводы: На этом этапе заключения проверяется способность модели к генерации результатов с использованием неизвестных данных. Кроме того, на некоторые бизнес-вопросы даются ответы, чтобы показать применимость модели в бизнес-контексте.
 
-**Step 10. Model Deploy:** This is the final step of the data science project. So, in this step the flask api is created and the model and the functions are saved to be implemented in the api.
+**Шаг 10.** Развертывание модели: Это последний этап проекта в области науки о данных. На этом этапе создается API Flask, и модель с функциями сохраняется для внедрения в API.
 
-## 4.0 Top 3 Data Insights
+## 4.0 Топ-3 вывода из данных
 
-* #### All the fraud amount is greater than 10.000.
+* #### Все мошеннические суммы больше 10 000
 
-    **TRUE:** The values are greater than 10.000. But it's important to note that the no-fraud values is greater than 100.000 also.
+    **TRUE:** Значения больше 10 000. Но важно отметить, что значения без мошенничества также больше 100 000.
 
-    ![hypothesis2](reports/figures/hypothesis2_cycle1.png)
+* #### 60% мошеннических транзакций происходят с использованием метода вывода наличных.
 
-* #### 60% of fraud transaction occours using cash-out-type method.
+    **FALSE:** Мошеннические транзакции происходят при переводах и выводе наличных. Однако их значения почти одинаковы.
 
-    **FALSE:** The fraud transaction occours in transfer and cash-out type. However they're almost the same value.
+* #### Значения больше 100 000 происходят при использовании метода перевода
 
-    ![hypothesis3](reports/figures/hypothesis3_cycle1.png)
-
-* #### Values greater than 100.000 occours using transfers-type method.
-
-    **FALSE:** The majority transactions occours in trasnfer-type, however transactions greater than 100.000 occour in cash-out and cash-in too.
-
-    ![hypothesis4](reports/figures/hypothesis4_cycle1.png)
+    **FALSE:** Большинство транзакций происходит при переводах, однако транзакции больше 100 000 также происходят при выводе и вводе наличных.
 
 ## 5.0 Machine Learning Applied
 
-Here's all cross validation results of the machine learning models with their default parameters. The cross validation method is important to show the capacity of the model to learn.
+Здесь представлены все результаты кросс-валидации моделей машинного обучения с их стандартными параметрами. Метод кросс-валидации важен для демонстрации способности модели к обучению.
 
 #### Dummy Model
 
@@ -134,60 +128,56 @@ It's possible to determinize the capacity of the model to generalize using unsee
 |:-----------------:|:---------:|:------:|:-----:|:-----:|
 |       0.915       |   0.944   |  0.829 | 0.883 | 0.883 |
 
-## 7.0 Business Results
+## 7.0 Бизнес-результаты
 
-* #### The company receives 25% of each transaction value truly detected as fraud.
+* #### Компания получает 25% от каждой транзакции, правильно определенной как мошенническая.
 
-    The company can receive R\$ 60,613,782.88 detecting fraud transactions.
+    Компания может получить 60 613 782,88 реалов, обнаружив мошеннические транзакции.
 
-* #### The company receives 5% of each transaction value detected as fraud, however the transaction is legitimate.
+* #### Компания получает 5% от каждой транзакции, обозначенной как мошенническая, но на самом деле легитимная.
 
-    For wrong decisions, the company can receive R\$ 183,866.98.
+    За ошибочные решения компания может получить R\$ 183,866.98.
 
-* #### The company gives back 100% of the value for the customer in each transaction detected as legitimate, however the transaction is actually a fraud.
+* #### Компания возвращает 100% стоимости клиенту за каждую транзакцию, обозначенную как легитимная, однако на самом деле являющуюся мошеннической.
 
-    The company must return the amount of R\$ 3,546,075.42.
+    Компания должна вернуть R\$ 3,546,075.42.
 
-* #### What is the model's Precision and Accuracy?
+* #### Какова точность и аккуратность модели?
 
-    For unseen data, the values of balanced accuracy is equal 91.5% and precision is equal 94.4%.
+    Для неизвестных данных значения сбалансированной точности составляют 91,5%, а точность - 94,4%.
 
-* #### How reliable is the model in classifying transactions as legitimate or fraudulent?
+* #### Насколько надежна модель в классификации транзакций как легитимных или мошеннических?
+  
+   Модель может обнаружить 76.3% +/- 3.5% of the fraud. Однако она обнаружила 0,829 мошеннических транзакций из неизвестных данных.
 
-    The model can detect 76.3% +/- 3.5% of the fraud. However it detected 0.829 of the frauds from a unseen data.
+* #### Какой доход ожидает компания от классификации 100% транзакций с помощью модели?
 
-* #### What is the revenue expected by the company classify 100% of transactions with the model?
+    Используя модель, компания может получить доход в размере 60 797 649,86 реалов. Используя текущий метод обнаружения мошенничества, доход составляет 0.00.
 
-    Using the model the company can revenue R\$ 60,797,649.86. Using the currently method to detect fraud the revenue is 0.00.
+* #### Какие убытки ожидает компания, если она классифицирует 100% транзакций с помощью модели?
 
-* #### What is the loss expected by the Company if it classifies 100% of the transactions with the model?
+    За неправильную классификацию компания должна вернуть R\$ 3,546,075.42.  В отличие от этого, при неправильной классификации с использованием текущего метода, компания должна вернуть R\$ 246,001,206.94.
 
-    For wrong classifications the company must return the amount of R\$ 3,546,075.42. In contrast, for wrong classifications using the currently method, the company must return the amount of R\$ 246,001,206.94.
+* #### Какую прибыль ожидает компания Blocker Fraud при использовании модели?
+  
+    Компания может рассчитывать на прибыль в размере R\$ 57,251,574.44. Прибыль от текущего метода составляет R\$ -246,001,206.94.
 
-* #### What is the profit expected by the blocker fraud company when using the model?
+## 8.0 Выводы
 
-    The company can expect the profit of R\$ 57,251,574.44. The profit value of the currently method is R\$ -246,001,206.94.
+Данные чрезвычайно несбалансированы, однако удалось провести весь анализ данных и создать модель с хорошими показателями.
 
-## 8.0 Conclusions
+Компания может ожидать дохода в размере  R\$ 57,251,574.44. Этот результат может продемонстрировать возможности проекта в области науки о данных и помочь компании.
 
-The data is extremaly unbalanced, however it was possible to make all the data analysis and create with good scores.
+## 9.0 Полученные уроки
 
-The company may expect a revenue of R\$ 57,251,574.44. This result may show the capacity of a project of data science and help the company.
+* Даже при несбалансированных классах возможно создать модель с хорошими показателями.
 
-## 9.0 Lessons Learned
+* Возможно создать модель, способную классифицировать классы с менее чем 1% образцов.
 
-* Even when the classes are unbalanced, it's possible to create a model with good scores.
+## 10.0 Следующие шаги
 
-* It is possible to create a model that can classify classes with less than 1% of samples.
+* Протестировать максимум еще 10 гипотез.
 
-## 10.0 Next Steps
+* Реализовать техники oversampling или subsampling для улучшения показателей модели.
 
-* Test at most more 10 hypothesis.
-
-* Implement oversampling or subsampling techiniques to improve the model scores.
-
-* Implement the api on the heroku plataform.
-
-## License
-
-This project is licensed under the MIT License - see the [LICENSE](LICENSE) file for details
+* Реализовать API на платформе Heroku.
