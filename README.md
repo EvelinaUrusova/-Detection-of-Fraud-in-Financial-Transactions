@@ -181,3 +181,10 @@ It's possible to determinize the capacity of the model to generalize using unsee
 * Реализовать техники oversampling или subsampling для улучшения показателей модели.
 
 * Реализовать API на платформе Heroku.
+
+## 11.0 Использованные технологии
+
+joblib, warnings, inflection, numpy, pandas, seaborn, matplotlib, scipy.stats, boruta.BorutaPy, category_encoders.OneHotEncoder
+IPython.display, xgboost, lightgbm, sklearn, SVC, DummyClassifier, RandomForestClassifier, KNeighborsClassifier
+LogisticRegression, balanced_accuracy_score, precision_score, classification_report, recall_score, f1_score, make_scorer, cohen_kappa_score, MinMaxScaler
+GridSearchCV, train_test_split, StratifiedKFold
