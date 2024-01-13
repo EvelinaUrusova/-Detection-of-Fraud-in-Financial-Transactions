@@ -116,13 +116,13 @@
 
 ## 6.0 Machine Learning Performance
 
-The chosen model was **XGBoost** and it was tuned to improve their parameters and scores. Below there's a table with the capacity of the model to learn.
+Выбранной моделью был XGBoost, и она была настроена для улучшения её параметров и показателей. Ниже приведена таблица с оценкой способности модели к обучению.
 
 | Balanced Accuracy |    Precision    |      Recall     |        F1       |      Kappa      |
 |:-----------------:|:---------------:|:---------------:|:---------------:|:---------------:|
 |  0.881 +/- 0.017  | 0.963 +/- 0.007 | 0.763 +/- 0.035 | 0.851 +/- 0.023 | 0.851 +/- 0.023 |
 
-It's possible to determinize the capacity of the model to generalize using unseen data. In other words, capcity of the model to classify new data as shown.
+Можно определить способность модели к обобщению на основе невидимых данных. Другими словами, способность модели классифицировать новые данные, как показано.
 
 | Balanced Accuracy | Precision | Recall |   F1  | Kappa |
 |:-----------------:|:---------:|:------:|:-----:|:-----:|
